@@ -311,11 +311,11 @@ body {
 }
 .hero__box-image {
   height: auto;
-  min-width: 380px;
+  flex-shrink: 1;
 }
 @media (max-width: 767px) {
   .hero__box-image {
-    width: 450px;
+    max-width: 450px;
   }
 }
 .hero__box-image img {
@@ -408,12 +408,12 @@ body {
   }
 }
 .revenue-growth__container {
-  min-width: 375px;
+  flex-shrink: 1;
+  height: auto;
 }
 @media (max-width: 1023px) {
   .revenue-growth__container {
-    width: 400px;
-    height: auto;
+    max-width: 400px;
   }
 }
 .revenue-growth__image {
@@ -647,7 +647,7 @@ body {
   position: relative;
   z-index: 1;
 }
-.news__imege {
+.news__slide-image {
   object-fit: cover;
   height: auto;
 }
@@ -682,7 +682,7 @@ body {
 }
 
 .navigation-buttons {
-  color: #7E8492;
+  color: #02104e;
   width: 25px;
   height: 25px;
 }
@@ -1005,7 +1005,7 @@ body {
   height: 2px;
   background-color: #101010;
   border-radius: 30px;
-  transition: transform 0.4s ease-in-out, opacity 0.3s ease;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease;
 }
 .mobile-menu__line--width {
   width: 50%;
@@ -1042,7 +1042,7 @@ body {
   left: 0;
   padding: 50px;
   z-index: 10;
-  animation: openMobileMenu 2s both;
+  animation: openMobileMenu 1s both;
 }
 
 .active-mobile-menu a {
