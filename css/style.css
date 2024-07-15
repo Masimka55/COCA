@@ -204,6 +204,11 @@ body {
     padding-top: 80px;
   }
 }
+@media (max-width: 767px) {
+  .section-offset {
+    padding-top: 50px;
+  }
+}
 
 .header {
   position: absolute;
@@ -463,6 +468,7 @@ body {
 @media (max-width: 767px) {
   .statistics-list {
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 40px;
   }
 }
 .statistics-list__item {
@@ -526,6 +532,11 @@ body {
     padding: 50px 15px;
   }
 }
+@media (max-width: 767px) {
+  .partnes__wrapper {
+    padding: 20px 15px;
+  }
+}
 .partnes__number {
   margin-bottom: 16px;
 }
@@ -560,7 +571,7 @@ body {
   margin-bottom: 80px;
 }
 @media (max-width: 767px) {
-  .team-graph {
+  .team-graph__description {
     margin-bottom: 40px;
   }
 }
@@ -592,9 +603,13 @@ body {
 .team-graph__box-image {
   position: relative;
   min-width: 160px;
+  height: auto;
+  max-width: 240px;
 }
 .team-graph__image {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .team-graph__icon {
   position: absolute;
